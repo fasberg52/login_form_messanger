@@ -5,6 +5,18 @@
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 @font-face {
+  font-family: estedad;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/IRANSANS/Estedad-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: estedad;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/IRANSANS/Estedad-Regular.woff') format('woff');
+}
+@font-face {
   font-family: iransans;
   font-style: normal;
   font-weight: 900;
@@ -40,12 +52,12 @@
 
 body, html {
 	height: 100%;
-	font-family: iransans, sans-serif;
+	font-family: estedad,iransans, sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: iransans;
+	font-family: estedad,iransans;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -71,7 +83,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: iransans;
+	font-family: estedad,iransans;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -138,14 +150,14 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
-  font-family: iransans;
+  font-family: estedad,iransans;
   font-size: 13px;
   line-height: 1.5;
   color: #999999;
 }
 
 .txt2 {
-  font-family: iransans;
+  font-family: estedad,iransans;
   font-size: 13px;
   line-height: 1.5;
   color: #666666;
@@ -213,7 +225,7 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: iransans;
+  font-family: estedad,iransans;
   font-size: 24px;
   color: #333333;
   line-height: 1.2;
@@ -234,7 +246,7 @@ iframe {
 }
 
 .input100 {
-  font-family: iransans;
+  font-family: estedad,iransans;
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
@@ -327,7 +339,7 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: iransans;
+  font-family: estedad;
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
@@ -422,7 +434,7 @@ iframe {
   left: 8px;
   pointer-events: none;
 
-  font-family: iransans;
+  font-family: estedad;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
@@ -457,7 +469,12 @@ iframe {
   visibility: visible;
   opacity: 1;
 }
-
+#varification-code{
+  display: none;
+}
+#user-informations{
+  display: none;
+}
 @media (max-width: 992px) {
   .alert-validate::before {
     visibility: visible;
